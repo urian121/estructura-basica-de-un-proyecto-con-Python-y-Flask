@@ -7,18 +7,16 @@
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
-    <li><a href="#">Información</a></li>
+    <li class="{% if request.path == '/' %}active{% endif %}">
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+    </li>
+    <li class="{% if request.path == '/info' %}active{% endif %}">
+      <a href="/info">Información</a>
+    </li>
     <li>
       <a href="{{ url_for('editProfile') }}">
         <i class="bi bi-person-circle"></i>
         UrianV
-      </a>
-    </li>
-    <li>
-      <a href="{{ url_for('logout') }}">
-        <i class="bi bi-arrow-clockwise"></i>
-        Salir
       </a>
     </li>
   </ul>

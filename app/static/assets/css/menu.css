@@ -4,7 +4,7 @@
 body {
   margin: 0;
   background-color: #f4f4f4;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {
@@ -47,7 +47,7 @@ a {
   padding: 5px 30px;
   text-decoration: none;
 }
-.logo img{
+.logo img {
   width: 50px;
 }
 
@@ -142,4 +142,8 @@ a {
   .header .menu-icon {
     display: none;
   }
+}
+
+.active {
+  border-bottom: 2px solid #fde74c !important;
 }
