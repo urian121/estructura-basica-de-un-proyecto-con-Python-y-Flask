@@ -14,7 +14,9 @@
       <a href="/info">Información</a>
     </li>
     <li>
-      <a href="{{ url_for('editProfile') }}">
+      <a
+        class="{% if request.path == '/perfil' %}active{% endif %}"
+        href="{{ url_for('perfil') }}">
         <i class="bi bi-person-circle"></i>
         UrianV
       </a>
