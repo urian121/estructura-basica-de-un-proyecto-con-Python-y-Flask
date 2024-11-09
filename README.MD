@@ -3,7 +3,7 @@
 ### Activas tu entorno virtual
 `. env/Scripts/activate`
 ### Luego instalas el Framework de Flask
-`pip instal flask`
+`pip install flask`
 ### Ahora solo entras a la carpeta app asi:
 `cd app/`
 
